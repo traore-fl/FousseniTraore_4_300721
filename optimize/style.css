@@ -284,7 +284,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 3em !important;
+    color: #FFFFFF!important;
 }
 
 .navbar {
@@ -677,7 +678,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.8rem;
 }
 
 .tight-width-whitespace {
@@ -702,10 +703,12 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    padding: 10px;
+    color: #FFFFFF!important;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2rem!important;
     line-height: 1.4em;
 }
 
@@ -737,6 +740,7 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    font-family: sans-serif;
 }
 
 .portfolio-thumb {
@@ -753,7 +757,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(100, 86, 63, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,15 +775,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #99350A;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #99350A;
     color: #FFFFFF!important;
 }
 
@@ -822,7 +826,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +852,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +876,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +884,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1039,4 +1037,9 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+figure{
+    display: flex;
+    justify-content: center;
 }
